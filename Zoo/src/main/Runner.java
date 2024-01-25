@@ -1,17 +1,16 @@
 package main;
 
-import model.Example;
+import model.Bird;
 
 public class Runner {
 
 	public static void main(String[] args) {
-		Runner run = new Runner();
-		run.go();
+		Bird birdObj = new Bird("woodlands","Robin", 9);
+		birdObj.makeNoise();
+		
+		System.out.println(birdObj.toString());
+		System.out.println(birdObj.makeNoise());
+
 	}
 
-	private void go() {
-		Example example = new Example();
-		example.makeNoise();
-		
-	}
 }
